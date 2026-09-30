@@ -67,6 +67,13 @@ footer{padding:36px 0 18px;border-top:1px solid var(--line);text-align:center;co
 footer b{display:block;margin-bottom:6px;color:var(--hi);font:500 26px var(--serif);letter-spacing:.08em;text-transform:none}
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:9;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(28,4,10,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
 .bar .btn{width:100%}
+.quote{max-width:21em;margin:0 auto 22px;font:italic 500 clamp(25px,4.6vw,34px)/1.22 var(--serif);color:var(--hi)}
+.txt{max-width:34em;margin:0 auto 40px;font:400 clamp(19px,2.6vw,21px)/1.7 var(--serif);color:#eadfd2}
+.pillars{display:grid;gap:0;max-width:900px;margin:0 auto}
+.pillars div{padding:26px 10px;border-top:1px solid var(--line)}
+.pillars h3{margin:0 0 6px;font:500 25px/1.15 var(--serif);color:var(--hi)}
+.pillars p{margin:0 auto;max-width:22em;color:var(--mute);font-size:15px}
+@media (min-width:760px){.pillars{grid-template-columns:repeat(3,1fr)}.pillars div{padding:8px 26px;border-top:0;border-left:1px solid var(--line)}.pillars div:first-child{border-left:0}}
 @keyframes fade{from{opacity:0;transform:scale(1.04)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media (min-width:900px){
@@ -112,6 +119,18 @@ footer b{display:block;margin-bottom:6px;color:var(--hi);font:500 26px var(--ser
 </div>
 
 <div class="wrap">
+  <section>
+    <h2>Sobre a Dra. Beatriz</h2>
+    <div class="rule"><i></i></div>
+    <p class="quote">Por trás de cada processo existe uma pessoa, e uma família que também cumpre a pena.</p>
+    <p class="txt">Advogada criminalista com caminhada no Direito Penal, a Dra. Beatriz Ravanhani atua da prisão em flagrante ao Tribunal do Júri e à execução penal. Une técnica rigorosa e estratégia de defesa a um atendimento humanizado: escuta com atenção, explica cada etapa em linguagem clara e acompanha o cliente e a família durante todo o caso.</p>
+    <div class="pillars">
+      <div><h3>Técnica e estratégia</h3><p>Cada caso é estudado com rigor, da investigação ao plenário.</p></div>
+      <div><h3>Atendimento humanizado</h3><p>Escuta respeitosa e acolhimento em um momento delicado.</p></div>
+      <div><h3>Acompanhamento próximo</h3><p>Você e sua família informados sobre cada passo do processo.</p></div>
+    </div>
+  </section>
+
   <section>
     <h2>Adiante seu atendimento</h2>
     <p class="sub">Opcional. Assim a doutora já sabe do que se trata quando abrir a sua mensagem.</p>
